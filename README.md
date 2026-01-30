@@ -4,7 +4,7 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 # Requirements
 -  **Docker Desktop**
 - **Git**
-# Requirements for running Tests
+### Requirements for running Tests
 - **Java 17+** 
 - **Python 3.9+** 
 
@@ -12,49 +12,42 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 
 ### windows
 - Download and install [Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/).
-- Ensure WSL 2 (Windows Subsystem for Linux) is enabled during installation.
+- Ensure WSL 2 is enabled during installation
 
 ### MacOs
 - Download and install [Docker Desktop for Mac](https://docs.docker.com/desktop/install/mac-install/).
 
 ### Linux
-- Install Docker Engine following the official guide for your distribution: [Docker Engine Installation](https://docs.docker.com/engine/install/).
-- Ensure you also install `docker-compose` if it is not included.
+- Install based on your distribution: [Docker Engine Installation](https://docs.docker.com/engine/install/).
+- Ensure you install `docker-compose` if it is not included.
 
 # Run Local Deployment
 
 This will clone all microservices (`UserService`, `ProductService`, `APIGateway`, `ForecastService`, `WebsiteFrontend`) and start them in Docker containers.
 
 ### windows
-1. Double-click or run the setup script to clone/update repositories:
+1. Open Docker Desktop
+
+2. Open Terminal in the Project folder of this repo
+```cmd
+cd {path}/LocalDeployment
+```
+3. Verify Docker is running:
+```
+docker ps
+```
+You should see
+```
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+```
+4. Run the setup script to clone/update repositories:
    ```cmd
-   setup.bat
-2. Start the application using Docker Compose:
+   .\setup.bat
+   ```
+5. Start the application using Docker Compose:
     ```DOS
    docker-compose up --build
-3. Access the application:
-- Frontend: http://localhost
-- API Gateway: http://localhost:8080
+   ```
+6. Access the application:
+- At: http://localhost
 
-### MacOs / Linux
-1. Make the setup script executable:
-   ```Bash
-   chmod +x setup.sh
-   ./setup.sh
-2. Start the Application using Docker Compose:
-   ```Bash
-   docker-compose up --build
-   3. Access the application:
-- Frontend: http://localhost
-- API Gateway: http://local
-
-# Run Tests
-
-### Windows
-    ```DOS
-    test-all.bat
-
-### MacOs / Linux
-```Bash
-    chmod +x test-all.sh
-    ./test-all.sh
