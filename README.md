@@ -1,13 +1,18 @@
 # The Last Fork Local Deployment And Tests
 Repository configured To Pull from all Relevant repos for local deployment of entire architecture for easy local deployment and testing.
 
+---
 # Requirements
 -  **Docker Desktop**
 - **Git**
 ### Requirements for running Tests
-- **Java 17+** 
+- **Java 17 jdk** 
 - **Python 3.9+** 
+- Poetry
+### If on linux
+- pipx (Install Poetry through pipx if using linux)
 
+---
 # Docker Installation
 
 ### windows
@@ -18,52 +23,129 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 - Download and install [Docker Desktop for Mac](https://docs.docker.com/desktop/install/mac-install/).
 
 ### Linux
-- Install based on your distribution: [Docker Engine Installation](https://docs.docker.com/engine/install/).
+- Install based on your distribution: [Docker Desktop for Linux](https://docs.docker.com/desktop/setup/install/linux).
 - Ensure you install `docker-compose` if it is not included.
-
+---
 # Run Local Deployment
 
 This will clone all microservices (`UserService`, `ProductService`, `APIGateway`, `ForecastService`, `WebsiteFrontend`) and start them in Docker containers.
 
-### windows
+## Run Local Deployment (Windows)
 1. Open Docker Desktop
 
-2. Open Terminal in the Project folder of this repo
-```cmd
-cd {path}/LocalDeployment
+2. Open Terminal, Clone this repo, and open the Project
+```Bash
+  git clone https://github.com/Team-Tiger1/LocalDeployment
+
+  cd LocalDeployment
 ```
 3. Verify Docker is running:
-```
-docker ps
+```Bash
+  docker ps
 ```
 You should see
 ```
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
-4. Run the setup script to clone/update repositories:
-   ```cmd
+4. Run the setup script to clone/update microservice repositories for TheLastFork:
+```Bash
    .\setup.bat
-   ```
+```
 5. Start the application using Docker Compose:
-    ```DOS
+```Bash
    docker-compose up --build
-   ```
+```
 6. Access the application:
 - At: http://localhost
 
-# Run Tests (NOT TESTED YET SUBJECT TO CHANGE)
+## Run Local Deployment (Linux)
+1. Clone this repository
+```Bash
+  git clone https://github.com/Team-Tiger1/LocalDeployment
 
-### Windows
-
-1. Open Terminal in the Project folder of this repo
-```cmd
-cd {path}/LocalDeployment
+  cd LocalDeployment
 ```
-2. Run The following command to run the tests
-```DOS
+2. Run the setup script to clone/update microservice repositories for TheLastFork:
+```Bash
+  chmod +x setup.sh
+   ./setup.sh
+```
+
+3. Start the Application using Docker Compose:
+```Bash
+   docker-compose up --build
+```
+4. Access the application:
+- At: http://localhost
+
+
+
+
+## Run Local Deployment (MacOS)
+- instructions HERE 
+
+---
+
+# Run Tests 
+
+## Run Tests (Windows)
+
+1. Open Terminal, Clone and open this repository
+```Bash
+  git clone https://github.com/Team-Tiger1/LocalDeployment
+
+  cd LocalDeployment
+```
+2. (If not done already) Run the setup script to clone/update microservice repositories for TheLastFork:
+```Bash
+   .\setup.bat
+```
+
+3. Run The following command to run the tests
+```Bash
     .\test-all.bat
 ```
-3. It should take a few minutes to run but if sucsessfull you should see 
+4. It should take a few minutes to run but if successful you should see 
+```Bash
+  All tests finished successfully!
 ```
-All tests finished successfully!
+
+##  Run Tests (Linux)
+1. Clone this repository
+``` Bash
+    git clone https://github.com/Team-Tiger1/LocalDeployment
+
+    cd LocalDeployment
 ```
+
+2. Install Pipx if not installed already 
+>Only use the below installation method on Ubuntu/Debain Based Linux Distrubutions, if you are on another Linux Distribution
+go to https://pipx.pypa.io/stable/installation/
+```Bash
+  sudo apt update
+  sudo apt install -y pipx
+  pipx ensurepath
+```
+3. install poetry using pipx
+```Bash
+  pipx install poetry
+  source ~/.bashrc
+```
+
+4. (If not done already) Run the setup script to clone/update microservice repositories for TheLastFork:
+```Bash
+   ./setup.sh
+```
+
+5. Make the setup script executable and Run the tests:
+```Bash
+   chmod +x test-all.sh
+   ./test-all.sh
+```
+
+6. It should take a few minutes to run but if successful you should see
+```Bash
+  All tests finished successfully!
+```
+
+## Run Tests (MacOs)
