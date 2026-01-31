@@ -57,6 +57,8 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
 6. Access the application:
 - At: http://localhost
+7. To stop deployment in the same terminal press, Or stop it in the Docker app
+> Control+c
 
 ## Run Local Deployment (Linux)
 1. Clone this repository
@@ -78,6 +80,8 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 4. Access the application:
 - At: http://localhost
 
+5. To stop deployment in the same terminal press, Or stop it in the Docker app
+> Control+c
 
 
 
@@ -112,7 +116,8 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
 5. Access the application:
 - At: http://localhost
-
+6. To stop deployment in the same terminal press, Or stop it in the Docker app 
+> Control+c
 ---
 
 # Run Tests 
