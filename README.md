@@ -82,7 +82,36 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 
 
 ## Run Local Deployment (MacOS)
-- instructions HERE 
+1. Open Terminal, Clone this repositiory
+``` Bash
+    git clone https://github.com/Team-Tiger1/LocalDeployment
+
+    cd LocalDeployment
+```
+2. Open Docker Desktop, Verify it's running by running the below in terminal
+``` Bash
+    docker ps
+```
+> You should see
+```
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+```
+3. Run the setup script to clone/update microservice repositories for TheLastFork:
+```Bash
+  chmod +x setup.sh
+   ./setup.sh
+```
+4. Turn off AirPlay Receiver
+> Airplay Reciever uses port 5000 which our Forecast service uses
+- Go to System Prefrences 
+- General -> AirDrop & Handoff
+- Turn off __AirPlay Reciever__
+4. Start the Application using Docker Compose:
+```Bash
+   docker-compose up --build
+```
+5. Access the application:
+- At: http://localhost
 
 ---
 
@@ -149,3 +178,34 @@ go to https://pipx.pypa.io/stable/installation/
 ```
 
 ## Run Tests (MacOs)
+
+1. Open Terminal, Clone this repositiory (If Not done so already)
+``` Bash
+    git clone https://github.com/Team-Tiger1/LocalDeployment
+
+    cd LocalDeployment
+```
+
+3. Run the setup script to clone/update microservice repositories for TheLastFork:
+```Bash
+  chmod +x setup.sh
+   ./setup.sh
+```
+4. Turn off AirPlay Receiver
+> Airplay Reciever uses port 5000 which our Forecast service uses
+- Go to System Prefrences
+- General -> AirDrop & Handoff
+- Turn off __AirPlay Reciever__
+
+5. Make the setup script executable and Run the tests:
+```Bash
+   chmod +x test-all.sh
+   ./test-all.sh
+```
+
+6. It should take a few minutes to run but if successful you should see
+```Bash
+  All tests finished successfully!
+```
+---
+
