@@ -5,7 +5,7 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 # Requirements
 -  **Docker Desktop**
 - **Git**
-### Requirements for running Tests
+### Requirements for Running Tests
 - **Java 17 jdk** 
 - **Python 3.9+** 
 - Poetry
@@ -15,11 +15,11 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 ---
 # Docker Installation
 
-### windows
+### Windows
 - Download and install [Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/).
 - Ensure WSL 2 is enabled during installation
 
-### MacOs
+### MacOS
 - Download and install [Docker Desktop for Mac](https://docs.docker.com/desktop/install/mac-install/).
 
 ### Linux
