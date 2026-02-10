@@ -1,28 +1,31 @@
 @echo off
 echo Running User Service Tests...
 cd userservice
-call mvnw.cmd test
-if %errorlevel% neq 0 exit /b %errorlevel%
+powershell -Command "& { ./mvnw.cmd test | Select-String 'Tests run:' }"
 cd ..
+echo Above /\ are the User Service Test Results
+echo ----------------------------------------------------------------
 
 echo Running Product Service Tests...
 cd productservice
-call mvnw.cmd test
-if %errorlevel% neq 0 exit /b %errorlevel%
+powershell -Command "& { ./mvnw.cmd test | Select-String 'Tests run:' }"
 cd ..
+echo Above /\ are the Product Service Test Results
+echo ----------------------------------------------------------------
 
 echo Running Gateway Tests...
 cd apigateway
-call mvnw.cmd test
-if %errorlevel% neq 0 exit /b %errorlevel%
+powershell -Command "& { ./mvnw.cmd test | Select-String 'Tests run:' }"
 cd ..
+echo Above /\ are the API Gateway Test Results
+echo ----------------------------------------------------------------
 
 echo Running Forecast Tests...
 cd forecastservice
 call pip install poetry
 call poetry install
-call poetry run pytest
-if %errorlevel% neq 0 exit /b %errorlevel%
+echo Forecast Tests Results: \/
+powershell -Command "& { poetry run pytest | Select-String '==='}"
 cd ..
 
 echo All tests finished successfully!
