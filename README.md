@@ -28,7 +28,8 @@ Author: Daniel Jackson
 - Setup Authentication Security Filter that:
   - Verifies token signature for authenticity
   - Verifies token has not expired
-  - Written explicit paths that are exempt from authentication (E.G Endpoint Documentation Website)  
+  - Written explicit paths that are exempt from authentication (E.G Endpoint Documentation Website)
+  - Used Maven Licensing Plugin to check permissions of dependency licenses (Software Inventory)
 
 <br>
 
@@ -55,6 +56,8 @@ Author: Daniel Jackson
 - Added OpenAPI documentation to improve visibility of the backend for the front-end developers
 - Enforced Controller-Service-Repository model to improve consistency across services for developers
 - Setup Spring Boot Profiles to manage configurations for production, development and testing environments
+- Used Maven Licensing Plugin to check permissions of dependency licenses (Software Inventory)
+
 
 <br>
 
@@ -81,14 +84,23 @@ Co Author: Daniel Jackson
   - Defined Custom Exceptions to improve visibility in the logs
   - Wrote business logic in the Reservation Service Layer that accesses the database
 - Added OpenAPI documentation to improve visibility of the backend for the front-end developers
-- Enforced Controller-Service-Repository model to improve consistency across services for developers 
+- Enforced Controller-Service-Repository model to improve consistency across services for developers
+- Used Maven Licensing Plugin to check permissions of dependency licenses (Software Inventory)
+
 
  <br>
 
 ### Forecast Service
-- Author: Alex Greasley
-- Co Author: Jed Leas
-- {Description here}
+Author: Alex Greasley
+
+<br>
+
+Author: Jed Leas
+
+<br>
+
+Author: Daniel Jackson
+- Used pip-licenses to check permissions of python module licenses (Software Inventory)
 
 <br>
 
