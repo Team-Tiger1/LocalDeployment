@@ -108,7 +108,7 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 <br>
 
 ## Website 
-**Author: Toby Beckett **
+**Author: Toby Beckett**
 - My role was Team-Lead/Scrum-Master, Front end
 - Created the Lofi Designs for the Login (supplier and user), register(Supplier and user), Orders, catalog, impact, and the report issue pages that are all on the user side of the website
 - Created the user Login page: HTML, CSS and javascript
@@ -124,7 +124,7 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 
 <br>
 
-**Author: William Foulger **
+**Author: William Foulger**
 - Created the Lofi designs for the Dashboard, Forecast, Create produce, create bunlde, Analytics and forecast pages
 - Created the supplier Dashboard page: HTML, CSS, javascript
 - Created the supplier Create Products page: HTML, CSS, javascript
