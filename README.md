@@ -1,11 +1,11 @@
-# The Last Fork Local Deployment And Tests
+# TheLastFork Local Deployment And Tests
 Repository configured To Pull from all Relevant repos for local deployment of entire architecture for easy local deployment and testing.
 
 ---
 # Contributions
 
 ## DevOps
-Author: Jed Leas
+**Author: Jed Leas**
 - My focus has been setting up the instances of the achirtecture designed by Daniel Jackson which included setting up the:
   - Nginx (Reverse proxy)
   - K3s
@@ -22,7 +22,7 @@ Author: Jed Leas
 ## Backend Services  
 
 ### API Gateway
-Author: Daniel Jackson
+**Author: Daniel Jackson**
 - Setup this routing service to manage sending request to the right service, using pattern matching based on the URL.
 - Configured CORS so the production website and development environments can send requests to the backend.
 - Setup Authentication Security Filter that:
@@ -30,11 +30,12 @@ Author: Daniel Jackson
   - Verifies token has not expired
   - Written explicit paths that are exempt from authentication (E.G Endpoint Documentation Website)
   - Used Maven Licensing Plugin to check permissions of dependency licenses (Software Inventory)
+  - Created README file to show details about the repository
 
 <br>
 
 ### User Service
-Author: Daniel Jackson
+**Author: Daniel Jackson**
 - Setup Authentication Components:
   - Created Refresh and Access Token Generation using Secret Key
   - Created methods to extract user type and Id from access token
@@ -57,16 +58,17 @@ Author: Daniel Jackson
 - Enforced Controller-Service-Repository model to improve consistency across services for developers
 - Setup Spring Boot Profiles to manage configurations for production, development and testing environments
 - Used Maven Licensing Plugin to check permissions of dependency licenses (Software Inventory)
+- Created README file to show details about the repository
 
 
 <br>
 
 ### Product Service 
-Author: Robert Rainer
+**Author: Robert Rainer**
 
 <br>
 
-Co Author: Daniel Jackson
+**Author: Daniel Jackson**
 - Led code structure discussions with Robert Rainer about using the MVC model
 - Setup Bundle Components:
   - Created Bundle Endpoints and specified the data required in the request
@@ -86,26 +88,27 @@ Co Author: Daniel Jackson
 - Added OpenAPI documentation to improve visibility of the backend for the front-end developers
 - Enforced Controller-Service-Repository model to improve consistency across services for developers
 - Used Maven Licensing Plugin to check permissions of dependency licenses (Software Inventory)
+- Created README file to show details about the repository
 
 
  <br>
 
 ### Forecast Service
-Author: Alex Greasley
+**Author: Alex Greasley**
 
 <br>
 
-Author: Jed Leas
+**Author: Jed Leas**
 
 <br>
 
-Author: Daniel Jackson
+**Author: Daniel Jackson**
 - Used pip-licenses to check permissions of python module licenses (Software Inventory)
 
 <br>
 
 ## Website 
-Author: Toby Beckett 
+**Author: Toby Beckett **
 - My role was Team-Lead/Scrum-Master, Front end
 - Created the Lofi Designs for the Login (supplier and user), register(Supplier and user), Orders, catalog, impact, and the report issue pages that are all on the user side of the website
 - Created the user Login page: HTML, CSS and javascript
@@ -121,7 +124,7 @@ Author: Toby Beckett
 
 <br>
 
-Author: William Foulger 
+**Author: William Foulger **
 - Created the Lofi designs for the Dashboard, Forecast, Create produce, create bunlde, Analytics and forecast pages
 - Created the supplier Dashboard page: HTML, CSS, javascript
 - Created the supplier Create Products page: HTML, CSS, javascript
@@ -130,7 +133,7 @@ Author: William Foulger
 
 <br>
 
-Author: Daniel Jackson
+**Author: Daniel Jackson**
 - Integrated the Authentication Mechanism into the Website
   - Created a check to see if the access token is valid
   - Created standard POST and GET methods with retry mechanisms
@@ -142,12 +145,41 @@ Author: Daniel Jackson
 <br>
 
 ## Testing
-Author: Ivy Figari
+**Author: Ivy Figari**
 - {Description here}
 
 <br>
 
 ## Documentation
+
+**Author: Daniel Jackson**
+- Wrote the Architecture descriptions
+- Created the Entity-Relationship Diagram
+- Created the overall backend architecture diagram
+- Wrote about each service and the overall data flow through our system
+- Wrote about architectural decisions we made and their impact
+- Explained the rationale behind choosing our languages and frameworks
+- Made the Software/Data Licensing document
+
+<br>
+
+**Author: Alex Greasley**
+
+<br>
+
+**Author: Jed Leas**
+
+<br>
+
+**Author: Toby Beckett**
+
+<br>
+
+**Author: Robert Rainer**
+
+<br>
+
+**Author: Ivy Figari**
 
 <br>
 
