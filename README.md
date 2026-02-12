@@ -183,8 +183,8 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 
 <br>
 
-## Ethical and Legal considerations (Maybe have other headings / change this)
-Author: Oscar De Lemos
+## Ethical and Legal considerations
+**Author: Oscar De Lemos**
 - {Description here}
 
 <br>
