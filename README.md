@@ -1,4 +1,4 @@
-<img width="1172" height="692" alt="image" src="https://github.com/user-attachments/assets/dec6c0a0-f620-4057-a60c-932231af0d84" /><img width="1172" height="692" alt="image" src="https://github.com/user-attachments/assets/dec6c0a0-f620-4057-a60c-932231af0d84" /># TheLastFork Local Deployment And Tests
+# TheLastFork Local Deployment And Tests
 Repository configured To Pull from all Relevant repos for local deployment of entire architecture for easy local deployment and testing.
 
 ---
