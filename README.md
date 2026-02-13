@@ -1,4 +1,4 @@
-# TheLastFork Local Deployment And Tests
+<img width="1172" height="692" alt="image" src="https://github.com/user-attachments/assets/dec6c0a0-f620-4057-a60c-932231af0d84" /><img width="1172" height="692" alt="image" src="https://github.com/user-attachments/assets/dec6c0a0-f620-4057-a60c-932231af0d84" /># TheLastFork Local Deployment And Tests
 Repository configured To Pull from all Relevant repos for local deployment of entire architecture for easy local deployment and testing.
 
 ---
@@ -65,6 +65,18 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 
 ### Product Service 
 **Author: Robert Rainer**
+- Developed Product and Allergen Components:
+   - Created Product REST Endpoints and specified the data required in requests    
+   - Implemented Product Service Layer with JWT ownerships checks
+   - Implemented Product–Allergen many-to-many relationship mapping
+   - Designed and implemented the DTO layer for product operations
+   - Implemented ProductService interface and ProductServiceJPA service layer
+   - Wrote business logic in Product Service Layer that accesses the database
+   - Developed ProductMapper to convert entities into DTOs 
+   - Created repository interfaces for Product and Allergy database operations
+- Commented Product Service    
+
+
 
 <br>
 
