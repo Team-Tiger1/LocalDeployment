@@ -199,12 +199,11 @@ Repository configured To Pull from all Relevant repos for local deployment of en
     - Teams goals 
   - Created Criteria to judge if requirements have been met
   - Created Traceability to instruct a person how to independently verify if we met our specified requirements
-  - Included in Traceability unit tests that are relevant
 - Wrote Sprint Two Plan
   - Spoke to every group members about:
     - Their goals for sprint two
     - What they want to work on
-    - If they want to do something else or stay in their role/
+    - If they want to do something else or stay in their role
   - Compiled this information into:
       - The user story’s
       - Story point estimations
