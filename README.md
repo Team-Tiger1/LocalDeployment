@@ -234,6 +234,11 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 <br>
 
 **Author: Robert Rainer**
+- Wrote the Problem Statement
+  - Researched food waste statistics and impact
+  - Identified root causes of food waste within context
+  - Investigated problems with existing systems/platforms
+  - Addressed project scope and limitations
 
 <br>
 
