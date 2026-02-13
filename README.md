@@ -213,7 +213,12 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 
 
 **Author: Toby Beckett**
-
+- Wrote the Executive Summary
+- Wrote the front-end design section
+  - Drew the front end lofi designs for the user pages
+  - Drew the front end lofi designs for the login/register page for the Users/Vendors
+  - Created the initial powerpoint template
+  - Write the front end explanation
 <br>
 
 **Author: Robert Rainer**
