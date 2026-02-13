@@ -248,7 +248,19 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 
 ## Ethical and Legal considerations
 **Author: Oscar De Lemos**
-- {Description here}
+- Produced the full Ethical and Legal considerations document covering food safety, allergen disclosure, consumer fairness, gamification risks, accessibility, environmental impact, privacy, security, intellectual property and data licensing.
+- Described the food safety responsibilities and liabilities of the platform, sellers, and users.
+- Identified key risks such as misleading listings, allergen inaccuracies and potential data exposure, and documented approaches the platform implements to mitigate these risks.
+- Wrote the website footer policy content, including: Terms of Use, Privacy Policy, Food Safety & Allergy statements, Cookies statement, and Accessibility Statement including known limitations.
+- Produced the Ethics Approval Statement, explaining why ethics approval was not required.
+<br>
+
+## License Decision 
+**Author: Oscar De Lemos**
+- Researched multiple potential licences, comparing their benefits and limitations.
+- Selected MIT Licence as the project's licence following my assessment.
+- Wrote the licence decision with justification, explaining the licence's suitability and compatibility with third party dependencies.
+- Configured and inserted the MIT LICENSE file across all project repositories.
 
 <br>
 
