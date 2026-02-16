@@ -34,6 +34,7 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 
 <br>
 
+
 ### User Service
 **Author: Daniel Jackson**
 - Setup Authentication Components:
@@ -60,6 +61,9 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 - Used Maven Licensing Plugin to check permissions of dependency licenses (Software Inventory)
 - Created README file to show details about the repository
 
+<br>
+
+**Author: Ivy Figari**
 
 <br>
 
@@ -102,6 +106,9 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 - Used Maven Licensing Plugin to check permissions of dependency licenses (Software Inventory)
 - Created README file to show details about the repository
 
+<br>
+
+**Author Ivy Figari**
 
  <br>
 
