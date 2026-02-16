@@ -64,6 +64,14 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 <br>
 
 **Author: Ivy Figari**
+- Unit tests
+    - User controller: successful user registration, user registering with email already in use, successful user login, password incorrect login, email doesnt exist login
+    - User services: successful login, creating invalid user profile with taken email, retireiving user from repository, using an email that doesnt exist,
+    - Vendor services: creating a vendor successfully, trimmed
+- Integration tests
+    - Initial streak is 0 when user registers, streak is then 1 after first purchase
+    - 2 reservations made the same day the streak doesnt increase twice
+  - test_evidence.pdf, main initial evaluation
 
 <br>
 
@@ -105,10 +113,6 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 - Enforced Controller-Service-Repository model to improve consistency across services for developers
 - Used Maven Licensing Plugin to check permissions of dependency licenses (Software Inventory)
 - Created README file to show details about the repository
-
-<br>
-
-**Author Ivy Figari**
 
  <br>
 
