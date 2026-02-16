@@ -164,7 +164,8 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 - Created the Vendor Page
   - Created Display for Vendor Information and Google Map Embed
   - Created List of Available Bundles with Drop-Down for Product List
-- Created Standard Header and Footer for all Web pages  
+- Created Standard Header and Footer for all Web pages
+- Added Analytics Page so vendors can see reservation statistics
   
 <br>
 
