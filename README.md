@@ -5,7 +5,7 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 # Requirements For Testing
 - **Git**
 - **Java 17 jdk** 
-- **Python 3.12+** 
+- **Python 3.12** 
 - Poetry
 ### If on linux
 - pipx (Install Poetry through pipx if using linux)
