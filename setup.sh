@@ -47,4 +47,4 @@ setup_simple_service "websitefrontend" "https://github.com/Team-Tiger1/websitefr
 
 
 echo "Setup and Build Complete"
-echo "You can now run: docker-compose up --build"
+echo "You can now run the tests"
