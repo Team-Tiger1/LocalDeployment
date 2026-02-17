@@ -61,5 +61,5 @@ if exist websitefrontend (
 
 
 echo Setup and Build Complete
-echo now run: docker-compose up --build
+echo now run the tests
 pause
