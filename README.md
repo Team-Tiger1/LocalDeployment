@@ -59,6 +59,7 @@ go to https://pipx.pypa.io/stable/installation/
 
 4. (If not done already) Run the setup script to clone/update microservice repositories for TheLastFork:
 ```Bash
+    chmod +x setup.sh
    ./setup.sh
 ```
 
