@@ -1,6 +1,18 @@
 # TheLastFork Local Deployment And Tests
 Repository configured To Pull from all Relevant repos for local deployment of entire architecture for easy local deployment and testing.
 
+# Contributions
+
+### Jed Leas
+- Created Deployment Guide
+
+### Toby Becket
+- Tested MacOS
+
+### Alexander Greasley
+- Tested Linux 
+- Tested Windows
+
 ---
 # Requirements For Testing
 - **Git**
