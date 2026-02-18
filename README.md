@@ -116,3 +116,264 @@ go to https://pipx.pypa.io/stable/installation/
 ```Bash
   All tests finished successfully!
 ```
+
+# Requirements for Local Deployment
+-  **Docker Desktop**
+- - **Git**
+# Docker Installation
+
+### windows
+- Download and install [Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/).
+- Ensure WSL 2 is enabled during installation
+
+### MacOs
+- Download and install [Docker Desktop for Mac](https://docs.docker.com/desktop/install/mac-install/).
+
+### Linux
+- Install based on your distribution: [Docker Desktop for Linux](https://docs.docker.com/desktop/setup/install/linux).
+- Ensure you install `docker-compose` if it is not included.
+---
+# Run Local Deployment
+
+This will clone all microservices (`UserService`, `ProductService`, `APIGateway`, `ForecastService`, `WebsiteFrontend`) and start them in Docker containers.
+
+## Run Local Deployment (Windows)
+1. Open Docker Desktop
+
+2. Open Terminal, Clone this repo, and open the Project
+```Bash
+  git clone https://github.com/Team-Tiger1/LocalDeployment
+
+  cd LocalDeployment
+```
+3. Verify Docker is running:
+```Bash
+  docker ps
+```
+You should see
+```
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+```
+4. Run the setup script to clone/update microservice repositories for TheLastFork:
+```Bash
+   .\setup.bat
+```
+5. Start the application using Docker Compose:
+```Bash
+   docker-compose up --build
+```
+6. Access the application:
+- At: http://localhost
+7. To stop deployment in the same terminal press, Or stop it in the Docker app
+> Control+c
+
+## Run Local Deployment (Linux)
+1. Clone this repository
+```Bash
+  git clone https://github.com/Team-Tiger1/LocalDeployment
+
+  cd LocalDeployment
+```
+2. Run the setup script to clone/update microservice repositories for TheLastFork:
+```Bash
+  chmod +x setup.sh
+   ./setup.sh
+```
+
+3. Start the Application using Docker Compose:
+```Bash
+   docker-compose up --build
+```
+4. Access the application:
+- At: http://localhost
+
+5. To stop deployment in the same terminal press, Or stop it in the Docker app
+> Control+c
+
+
+
+## Run Local Deployment (MacOS)
+1. Open Terminal, Clone this repositiory
+``` Bash
+    git clone https://github.com/Team-Tiger1/LocalDeployment
+
+    cd LocalDeployment
+```
+2. Open Docker Desktop, Verify it's running by running the below in terminal
+``` Bash
+    docker ps
+```
+> You should see
+```
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+```
+3. Run the setup script to clone/update microservice repositories for TheLastFork:
+```Bash
+  chmod +x setup.sh
+   ./setup.sh
+```
+4. Turn off AirPlay Receiver
+> Airplay Reciever uses port 5000 which our Forecast service uses
+- Go to System Prefrences
+- General -> AirDrop & Handoff
+- Turn off __AirPlay Reciever__
+4. Start the Application using Docker Compose:
+```Bash
+   docker-compose up --build
+```
+5. Access the application:
+- At: http://localhost
+6. To stop deployment in the same terminal press, Or stop it in the Docker app
+> Control+c
+---
+
+# Requirements for Local Deployment
+-  **Docker Desktop**
+- - **Git**
+# Docker Installation
+
+### windows
+- Download and install [Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/).
+- Ensure WSL 2 is enabled during installation
+
+### MacOs
+- Download and install [Docker Desktop for Mac](https://docs.docker.com/desktop/install/mac-install/).
+
+### Linux
+- Install based on your distribution: [Docker Desktop for Linux](https://docs.docker.com/desktop/setup/install/linux).
+- Ensure you install `docker-compose` if it is not included.
+---
+# Run Local Deployment
+
+This will clone all microservices (`UserService`, `ProductService`, `APIGateway`, `ForecastService`, `WebsiteFrontend`) and start them in Docker containers.
+
+## Run Local Deployment (Windows)
+1. Open Docker Desktop
+
+2. Open Terminal, Clone this repo, and open the Project
+```Bash
+  git clone https://github.com/Team-Tiger1/LocalDeployment
+
+  cd LocalDeployment
+```
+3. Naviate to the below file
+```
+LocalDeployment/websitefrontend/js/config.js
+```
+4. Change line 3 from
+```
+const isLocal = false;
+```
+to 
+```
+const isLocal = true;
+```
+
+5. Verify Docker is running:
+```Bash
+  docker ps
+```
+You should see
+```
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+```
+6. Run the setup script to clone/update microservice repositories for TheLastFork:
+```Bash
+   .\setup.bat
+```
+7. Start the application using Docker Compose:
+```Bash
+   docker-compose up --build
+```
+8. Access the application:
+- At: http://localhost
+9. To stop deployment in the same terminal press, Or stop it in the Docker app
+> Control+c
+
+## Run Local Deployment (Linux)
+1. Clone this repository
+```Bash
+  git clone https://github.com/Team-Tiger1/LocalDeployment
+
+  cd LocalDeployment
+```
+2. Naviate to the below file
+```
+LocalDeployment/websitefrontend/js/config.js
+```
+3. Change line 3 from
+```
+const isLocal = false;
+```
+to
+```
+const isLocal = true;
+```
+
+4. Run the setup script to clone/update microservice repositories for TheLastFork:
+```Bash
+  chmod +x setup.sh
+   ./setup.sh
+```
+
+5. Start the Application using Docker Compose:
+```Bash
+   docker-compose up --build
+```
+6. Access the application:
+- At: http://localhost
+
+7. To stop deployment in the same terminal press, Or stop it in the Docker app
+> Control+c
+
+
+
+## Run Local Deployment (MacOS)
+1. Open Terminal, Clone this repositiory
+``` Bash
+    git clone https://github.com/Team-Tiger1/LocalDeployment
+
+    cd LocalDeployment
+```
+
+2. Naviate to the below file
+```
+LocalDeployment/websitefrontend/js/config.js
+```
+3. Change line 3 from
+```
+const isLocal = false;
+```
+to
+```
+const isLocal = true;
+```
+
+3. Open Docker Desktop, Verify it's running by running the below in terminal
+``` Bash
+    docker ps
+```
+> You should see
+```
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+```
+4. Run the setup script to clone/update microservice repositories for TheLastFork:
+```Bash
+  chmod +x setup.sh
+   ./setup.sh
+```
+5. Turn off AirPlay Receiver
+> Airplay Reciever uses port 5000 which our Forecast service uses
+- Go to System Prefrences
+- General -> AirDrop & Handoff
+- Turn off __AirPlay Reciever__
+6. Start the Application using Docker Compose:
+```Bash
+   docker-compose up --build
+```
+7. Access the application:
+- At: http://localhost
+To stop deployment in the same terminal press, Or stop it in the Docker app
+> Control+c
+---
+
