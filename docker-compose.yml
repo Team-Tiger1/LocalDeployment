@@ -16,8 +16,17 @@ services:
       timeout: 5s
       retries: 5
 
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    command: redis-server --maxmemory 256mb --maxmemory-policy volatile-lru --appendonly yes
+
   rabbitmq:
-    image: rabbitmq:3-management-alpine
+    image: rabbitmq:3.12-management-alpine
     container_name: rabbitmq
     ports:
       - "5672:5672"
@@ -25,6 +34,13 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: admin
       RABBITMQ_DEFAULT_PASS: password
+    command: >
+      sh -c "
+      if [ ! -f /opt/rabbitmq/plugins/rabbitmq_delayed_message_exchange-3.12.0.ez ]; then
+        wget https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/v3.12.0/rabbitmq_delayed_message_exchange-3.12.0.ez -O /opt/rabbitmq/plugins/rabbitmq_delayed_message_exchange-3.12.0.ez;
+      fi;
+      rabbitmq-plugins enable rabbitmq_delayed_message_exchange;
+      rabbitmq-server"
 
   user-service:
     build: ./userservice
@@ -53,10 +69,16 @@ services:
       - SPRING_DATASOURCE_PASSWORD=password
       - SPRING_RABBITMQ_HOST=rabbitmq
       - SPRING_RABBITMQ_PASSWORD=password
+      - SPRING_DATA_REDIS_HOST=redis
+      - SPRING_DATA_REDIS_PORT=6379
       - JWT_SECRET=thisisafakejwtforlocaldeployment234567ujhgtr567uijhgftre
     depends_on:
       postgres:
         condition: service_healthy
+      rabbitmq:
+        condition: service_started
+      redis:
+        condition: service_started
 
   forecast-service:
     build: ./forecastservice
@@ -93,3 +115,6 @@ services:
       - "80:80"
     depends_on:
       - api-gateway
+
+volumes:
+  redis-data:
