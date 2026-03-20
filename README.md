@@ -5,7 +5,9 @@ Repository configured To Pull from all Relevant repos for local deployment of en
 
 ### Jed Leas
 - Created Deployment Guide
-
+- **Upated Local Deployment Guide for CW2**
+- - **To include Redis**
+- - **To include Delayed Message Exchange addon for RabbitMQ**
 ### Toby Becket
 - Tested MacOS
 
